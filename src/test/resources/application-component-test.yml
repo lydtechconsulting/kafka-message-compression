@@ -1,0 +1,12 @@
+---
+kafka:
+    bootstrap-servers: kafka:9092
+    producer:
+        compressionType: gzip
+        batchSize: 16000
+        lingerMs: 3
+        acks: all
+        async: true
+    consumer:
+        maxPollIntervalMs: 30000
+        maxPollRecords: 500

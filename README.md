@@ -47,8 +47,6 @@ curl -v -d '{"numberOfEvents":10000}' -H "Content-Type: application/json" -X POS
 
 The request should be accepted with a `202 ACCEPTED` response, as the event sending processing is asynchronous. 
 
-The broker, producer and consumer metrics can then be viewed via the Kafka command line tools or by using the Conduktor Platform.
-
 ### Configuring The Broker And Application
 
 A number of parameters can be configured in the `src/main/resources/application.yml`, or overridden in the `application.yml` in the root of this project.   e.g. the producer `batchSize`, `compressionType`, `lingerMs`, `acks` and `async`.
@@ -158,8 +156,8 @@ Comparing impact of compression type, and whether events are sent asynchronously
 |Compression| Topic Size (bytes) |
 |---|-----|
 |none| 5271108 |
-|snappy| 3323084 |
 |gzip| 2340481 |
+|snappy| 3323084 |
 |lz4| 3385693 |
 |zstd| 2200524 |
 
@@ -173,8 +171,8 @@ Comparing impact of compression type, and whether events are sent asynchronously
 |Compression| Topic Size (bytes) |
 |---|-----|
 |none| 5860000 |
-|snappy| 5612083 |
 |gzip| 4707612 |
+|snappy| 5612083 |
 |lz4| 5521408 |
 |zstd| 4862755 |
 

@@ -29,7 +29,7 @@ public class DemoService {
     /**
      * Processing happens asynchronously so the caller can return.
      *
-     * Either sends a total number of events, or sends events for a set period of time.
+     * Sends the requested number of events.
      */
     @Async
     public void process(TriggerEventsRequest request) {

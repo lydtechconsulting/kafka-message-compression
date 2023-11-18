@@ -17,12 +17,12 @@ mvn clean install
 
 From the root dir run the `docker-compose` files to start dockerised Kafka and Zookeeper:
 ```
-docker-compose -f docker-compose.yml up -d
+docker-compose up -d
 ```
 
 To also start the Conduktor Platform UI in Docker, run the following instead: 
 ```
-docker-compose -f docker-compose-conduktor.yml up -d
+docker-compose-conduktor up -d
 ```
 
 ### Start Demo Spring Boot Application

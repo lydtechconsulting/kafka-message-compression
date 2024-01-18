@@ -1,4 +1,4 @@
-# Kafka Spring Boot Metrics Demo Project
+# Kafka Spring Boot Message Compression Demo Project
 
 Spring Boot application demonstrating Kafka message compression.
 

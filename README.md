@@ -2,6 +2,11 @@
 
 Spring Boot application demonstrating Kafka message compression.
 
+This repo accompanies the following series of articles on Kafka message compression:
+
+- [Kafka Message Compression (1 of 2)](https://www.lydtechconsulting.com/blog-kafka-message-compression-pt1.html):  Looks at how and why message compression can be applied, and what impacts the effectiveness of the compression. It details the trade-offs to consider with applying message compression, and the trade-offs to consider when selecting the compression type.
+- [Kafka Message Compression (2 of 2): Spring Boot Demo](https://www.lydtechconsulting.com/blog-kafka-message-compression-pt2.html):  The demo application is covered, demonstrating configuring the producer to compress messages and observing the differences when different compression types are applied.
+
 ## Overview
 
 The application provides a REST endpoint that accepts a request to trigger sending events.  The number of events to produce can be specified.  The application consumes the events from the topic. 
